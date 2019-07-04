@@ -105,7 +105,7 @@
 <meta property="og:site_name" content="tangtang&#39;s blog">
 <meta property="og:description" content="自动化部署成果和测试由头这两天看了一些自动化部署的方案，就想着把自己公司的部署方式搞成自动化的。其实还是自己懒，实在不想每次都打好包再远程服务器去替换、重启。 这里得说一下前提，因为历史原因，公司服务器用的阿里云，且是Windows系统（好烦啊，为啥不买Linux的）。项目结构也简单，后端就一个，SpringBoot框架的，打包出来是个jar，我在服务器上写个bat文件直接java -jar就完事">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-07-04T09:59:39.811Z">
+<meta property="og:updated_time" content="2019-07-04T16:28:49.326Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo多服务器一键部署">
 <meta name="twitter:description" content="自动化部署成果和测试由头这两天看了一些自动化部署的方案，就想着把自己公司的部署方式搞成自动化的。其实还是自己懒，实在不想每次都打好包再远程服务器去替换、重启。 这里得说一下前提，因为历史原因，公司服务器用的阿里云，且是Windows系统（好烦啊，为啥不买Linux的）。项目结构也简单，后端就一个，SpringBoot框架的，打包出来是个jar，我在服务器上写个bat文件直接java -jar就完事">
@@ -365,13 +365,23 @@
                 
               
 
-              <time title="Created: 2019-07-04 17:07:11 / Modified: 17:59:39" itemprop="dateCreated datePublished" datetime="2019-07-04T17:07:11+08:00">2019-07-04</time>
+              <time title="Created: 2019-07-04 17:07:11" itemprop="dateCreated datePublished" datetime="2019-07-04T17:07:11+08:00">2019-07-04</time>
             </span>
           
 
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-07-05 00:28:49" itemprop="dateModified" datetime="2019-07-05T00:28:49+08:00">2019-07-05</time>
+              </span>
             
           
 
@@ -426,7 +436,7 @@
 <p>这里得说一下前提，因为历史原因，公司服务器用的阿里云，且是Windows系统（好烦啊，为啥不买Linux的）。<br>项目结构也简单，后端就一个，SpringBoot框架的，打包出来是个jar，我在服务器上写个bat文件直接java -jar就完事儿。<br>前端有好几个东西，包含微信的H5、web端的管理平台、公司的宣传网站。<br>因为业务量也不大，所以用不着分布式啥的。就直接一个nginx映射几个成几个子域名，后端接口也通过nginx映射后供前端页面调用。</p>
 <p>总结一下现在更新方式：<br>    1. 后端更新：直接本地打jar包-&gt;远程服务器-&gt;停服务-&gt;备份旧jar包-&gt;拷贝新jar包-&gt;起服务<br>    2. 前端更新：前端妹子打好包（Vue开发的，就是个dist.rar）发我-&gt;本地解压改名-&gt;远程服务器-&gt;备份旧的前端文件-&gt;替换成新的</p>
 <h3 id="实现方式"><a href="#实现方式" class="headerlink" title="实现方式"></a>实现方式</h3><p>业务比较简单，也用不着啥Jenkins这些持续集成啥的东西了，就Git Hook应该满足需求。<br>我现在在自己的阿里云服务器（CentOS）上试Git Hook，等成功了再搞公司服务器去。<br>先写到这边。</p>
-<p>测试一下推送到github库的时候，是不是能自动触发钩子拉取~<br>（未完待续哦……）</p>
+<p>测试推送到服务器裸仓库时，能否自动触发钩子拉取并更新。<br>（未完待续哦……）</p>
 
       
     </div>

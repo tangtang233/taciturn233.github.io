@@ -245,7 +245,7 @@
       
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories<span class="badge">2</span></a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories<span class="badge">3</span></a>
 
   </li>
         
@@ -263,7 +263,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">3</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">4</span></a>
 
   </li>
 
@@ -306,6 +306,171 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.pwai.net.cn/2019/07/04/Hexo多服务器一键部署/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="tangtang233">
+      <meta itemprop="description" content="自由不是你可以选择做什么，而是你可以选择不做什么">
+      <meta itemprop="image" content="/images/Gakki_400x400.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="tangtang's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/07/04/Hexo多服务器一键部署/" class="post-title-link" itemprop="url">Hexo多服务器一键部署</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-07-04 17:07:11 / Modified: 17:43:27" itemprop="dateCreated datePublished" datetime="2019-07-04T17:07:11+08:00">2019-07-04</time>
+            </span>
+          
+
+          
+            
+
+            
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/程序员笔记/" itemprop="url" rel="index"><span itemprop="name">程序员笔记</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="自动化部署成果和测试"><a href="#自动化部署成果和测试" class="headerlink" title="自动化部署成果和测试"></a>自动化部署成果和测试</h2><h3 id="由头"><a href="#由头" class="headerlink" title="由头"></a>由头</h3><p>这两天看了一些自动化部署的方案，就想着把自己公司的部署方式搞成自动化的。其实还是自己懒，实在不想每次都打好包再远程服务器去替换、重启。</p>
+<p>这里得说一下前提，因为历史原因，公司服务器用的阿里云，且是Windows系统（好烦啊，为啥不买Linux的）。<br>项目结构也简单，后端就一个，SpringBoot框架的，打包出来是个jar，我在服务器上写个bat文件直接java -jar就完事儿。<br>前端有好几个东西，包含微信的H5、web端的管理平台、公司的宣传网站。<br>因为业务量也不大，所以用不着分布式啥的。就直接一个nginx映射几个成几个子域名，后端接口也通过nginx映射后供前端页面调用。</p>
+<p>总结一下现在更新方式：<br>    1. 后端更新：直接本地打jar包-&gt;远程服务器-&gt;停服务-&gt;备份旧jar包-&gt;拷贝新jar包-&gt;起服务<br>    2. 前端更新：前端妹子打好包（Vue开发的，就是个dist.rar）发我-&gt;本地解压改名-&gt;远程服务器-&gt;备份旧的前端文件-&gt;替换成新的</p>
+<h3 id="实现方式"><a href="#实现方式" class="headerlink" title="实现方式"></a>实现方式</h3><p>业务比较简单，也用不着啥Jenkins这些持续集成啥的东西了，就Git Hook应该满足需求。<br>我现在在自己的阿里云服务器（CentOS）上试Git Hook，等成功了再搞公司服务器去。<br>先写到这边。</p>
+<p>（未完待续哦……）</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -872,7 +1037,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -893,7 +1058,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -910,7 +1077,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">tags</span>
                   
                 </div>

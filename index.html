@@ -407,6 +407,18 @@
           
             
             
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/2019/07/04/Hexo多服务器一键部署/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/07/04/Hexo多服务器一键部署/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -571,6 +583,18 @@
 
           
             
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/2019/07/02/更新Hexo和NexT/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/07/02/更新Hexo和NexT/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -748,6 +772,18 @@
 
           
             
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/2018/11/19/生日随笔/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/11/19/生日随笔/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -930,6 +966,18 @@
 
           
             
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/2018/10/29/第一篇Hexo文章/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/10/29/第一篇Hexo文章/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -1362,6 +1410,32 @@
 
 
   
+  
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'qXpNAUfIotM0MTy7CB1cUR2e-9Nh9j0Va',
+    appKey: 'G9pcW4L5AAvbSBjKJT8WlSmd',
+    placeholder: '我不一定同意你的说法，但我誓死捍卫你说话的权利！（说点啥呗）',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: 'zh-cn' || 'zh-cn'
+  });
+</script>
+
+
 
 
 
